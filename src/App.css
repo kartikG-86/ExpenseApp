@@ -1,0 +1,239 @@
+:root {
+  --primary-color: #0766eb;
+}
+
+*{
+  overflow: hidden;
+}
+.login-page{
+  height: 100vh;
+  width: 100vw;
+}
+
+.welcome{
+  height: 100vh;
+  width: 100vw;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  animation: fadeIn 1.5s ease-in-out forwards;
+
+
+}
+
+.welcome img{
+  width: 7rem;
+  height: 7rem;
+}
+
+.welcome h4{
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.welcome p{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+
+.carousel{
+  height: 80vh;
+  text-transform: capitalize;
+}
+.carousel img{
+  width: 25rem;
+  height: 25rem;
+}
+
+.form{
+  height: 100vh;
+  width: 100%;
+}
+
+.form form{
+  width: 100%;
+}
+
+.form h4{
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.form h6{
+  font-size: 1.5rem;
+
+}
+
+.form p{
+  color:grey;
+  font-weight: 500;
+}
+
+.form-floating{
+  width: 30rem;
+}
+
+.btn{
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.btn:hover{
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.form input{
+  width: 100%;
+}
+
+.dashboard{
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  background-color: rgba(161, 161, 161, 0.062);
+ 
+}
+
+.sidebar{
+  padding: 0.5rem;
+  border:2px solid rgba(128, 128, 128, 0.199);
+  background-color: white;
+  height: 100%;
+  border-radius: 1.3rem;
+}
+
+.sidebar div{
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.sidebar-sections{
+  width: 100%;
+}
+.sidebar-section:hover{
+  background-color: rgba(128, 128, 128, 0.137);
+}
+
+.sidebar-active{
+  color: var(--primary-color);
+}
+
+.sidebar {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.logout-btn{
+  font-size: 1.3rem;
+}
+
+.logout-btn:hover{
+ background-color: rgba(248, 25, 25, 0.295);
+ border: 2px solid red;
+}
+
+
+.main-section{
+border:2px solid rgba(128, 128, 128, 0.199);
+border-radius: 1.3rem;
+height: 100%;
+overflow:hidden
+
+}
+
+.avatar{
+  border-radius: 50%;
+}
+
+.navbar{
+  /* background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.082); */
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.title{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.sub-title{
+  font-weight: 500;
+  color: grey;
+}
+
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.notification{
+  position: relative;
+  top: -2rem;
+  left: 2.4rem;
+ height: 0.5rem;
+ width: 0.5rem;
+ font-weight: 600;
+  text-align: center;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.card{
+  background-color: white;
+  height: 7rem;
+  width: 100%;
+}
+
+.income-title{
+  color: #11884c;
+}
+
+.expense-title{
+  color: #d91827;
+
+}
+
+.income-icon{
+  background-color: #a7c7b6;
+  color: #11884c;
+  font-size: 2rem;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+}
+
+.expense-icon{
+  background-color: #d9b9b9;
+  color: #d91827;
+  font-size: 2rem;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
+}
