@@ -9,13 +9,14 @@ import Dashboard from './pages/Dashboard';
 import PrivateRoutes from './components/PrivateRoute';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
       <Routes>
         <Route element={<PrivateRoutes />}>
           <Route path="/home" element={<Dashboard />} />
+          <Route path="/statistics" element={<Dashboard />} />
+          <Route path="/wallet" element={<Dashboard />} />
+          <Route path="/profile" element={<Dashboard />} />
         </Route>
         <Route path="/" element={<WelcomePage />} />
         <Route path="/login" element={<Login />} />

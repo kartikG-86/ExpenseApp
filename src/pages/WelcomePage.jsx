@@ -6,7 +6,7 @@ const WelcomePage = () => {
     const navigate = useNavigate()
     useEffect(() => {
         setTimeout(() => {
-            navigate('/login')
+            navigate('/home')
         },2000)
     })
     return <>

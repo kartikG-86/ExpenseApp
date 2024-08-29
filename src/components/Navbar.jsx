@@ -1,6 +1,7 @@
 import React from "react";
 import Avatar from 'react-avatar';
 import { IoMdNotificationsOutline } from "react-icons/io";
+import { MdOutlineAddCircleOutline } from "react-icons/md";
 
 const Navbar = () => {
     return <>
@@ -12,10 +13,13 @@ const Navbar = () => {
                     <span className="sub-title">Kartik Goyal</span>
                 </div>
             </div>
-            <div>
-                
-                <IoMdNotificationsOutline className="icon mx-3" />
-                <div className="notification"></div>
+            <div className="d-flex flex-row">
+                <MdOutlineAddCircleOutline className="icon mx-3 add-btn" />
+
+                <div>
+                    <IoMdNotificationsOutline className="icon mx-3" />
+                    <div className="notification"></div>
+                </div>
             </div>
         </div>
     </>

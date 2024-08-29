@@ -1,34 +1,19 @@
-import React, { useState } from "react";
-import { CiWallet } from "react-icons/ci";
-import { GoHome } from "react-icons/go";
-import { BsGraphUpArrow } from "react-icons/bs";
-import { FaRegUserCircle } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+import { sections } from "../SideBarOptions";
 import { RiLogoutCircleRLine } from "react-icons/ri";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-    const sections = [{
-        title: 'Home',
-        link: '/home',
-        icon: <GoHome style={{ fontSize: '1.6rem' }} />
-    }, {
-        title: 'Statistics',
-        link: '/statistics',
-        icon: <BsGraphUpArrow style={{ fontSize: '1.6rem' }} />
 
-    }, {
-        title: 'Wallet',
-        link: '/wallet',
-        icon: <CiWallet style={{ fontSize: '1.6rem' }} />
-    }, {
-        title: 'Profile',
-        link: '/profile',
-        icon: <FaRegUserCircle style={{ fontSize: '1.6rem' }} />
-
-    },]
-
+    const navigate = useNavigate()
+    const location = useLocation()
     const [currentSection, setCurrentSection] = useState('/home')
+    useEffect(() => {
+        setCurrentSection(location.pathname)
+    })
     const changeSection = (section) => {
         setCurrentSection(section)
+        navigate(section)
     }
     return <>
         <div className="sidebar d-flex flex-column justify-content-between ">
